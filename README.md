@@ -189,3 +189,4 @@ bookfactory/
 - A "regenerate this chapter" button rather than rebuilding the whole book.
 - Cover art via Imagen, sitting behind the current blue field.
 - Per-theme prompt overrides in the `themes` table, so a music book can ask for different things than a history book.
+# bookfactory
