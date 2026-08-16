@@ -1,0 +1,9 @@
+.env
+storage/books/*
+storage/logs/*
+!storage/books/.gitkeep
+!storage/logs/.gitkeep
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
