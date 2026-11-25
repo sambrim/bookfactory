@@ -125,9 +125,12 @@ Output from either mode lands in `storage/logs/worker.log`, and every step is al
 
 ---
 
-## Gemini notes
+## AI Notes
 
-Model: `gemini-3.5-flash-lite`. Two things about this generation caught me out and are worth knowing before you tweak `ai/gemini.py`:
+For this verion I picked the model: `gemini-3.5-flash-lite`. 
+You can change the model to anything you want by modifying `ai/gemini.py`.
+
+Two things about this generation caught me out and are worth knowing before you tweak `ai/gemini.py`:
 
 - **`temperature`, `top_p` and `top_k` are deprecated and ignored.** Later models will 400 on them. Consistency has to come from the system instruction instead, which is why `SYSTEM_WRITER` is so prescriptive.
 - **Flash-Lite defaults to `thinking_level: "minimal"`.** Fine for the per-chapter writing pass, too shallow for research, so `GEMINI_THINKING_RESEARCH` is set to `medium`.
