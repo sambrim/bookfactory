@@ -1,5 +1,7 @@
 # Book Factory
 
+## AI based book maker
+
 Pick a theme, set a length, get a print-ready trivia PDF with the answer key bound in at the back.
 
 PHP 8.5 + MySQL 9.7 + NGINX 1.31, no Composer and no PHP framework. Gemini is called from a small Python worker that runs alongside the web app rather than inside the request.
